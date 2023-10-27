@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" caching """
+""" the FIFO caching """
 from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    """cache system """
+    """ the FIFO cache system """
 
     def __init__(self):
         """ Constructor """

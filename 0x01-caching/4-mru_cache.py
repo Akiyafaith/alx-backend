@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" MRU"""
+""" the MRU cache"""
 from base_caching import BaseCaching
 
 
 class MRUCache(BaseCaching):
-    """ MRU system """
+    """ MRU cache system """
 
     def __init__(self):
         """ Constructor """

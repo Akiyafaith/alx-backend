@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" LRU"""
+""" the LRU cache"""
 from base_caching import BaseCaching
 
 
 class LRUCache(BaseCaching):
-    """ LRU system"""
+    """the LRU cache system"""
 
     def __init__(self):
         """ Constructor """

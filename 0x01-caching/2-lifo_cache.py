@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" LIFO"""
+""" the LIFO cache"""
 from base_caching import BaseCaching
 
 
 class LIFOCache(BaseCaching):
-    """ LIFO system """
+    """ the LIFO cache system """
 
     def __init__(self):
         """ Constructor """
