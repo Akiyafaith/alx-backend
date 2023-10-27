@@ -32,8 +32,9 @@ class Server:
 
         dataset = self.dataset()
         return dataset[start_index:end_index]
+    
     def index_range(page: int, page_size: int) -> Tuple[int, int]:
-        """Calculate the start and end index for a specified page and page size."""
+        """The start and end index for a specified page and page size."""
         start_index = (page - 1) * page_size
         end_index = page * page_size
         return (start_index, end_index)
