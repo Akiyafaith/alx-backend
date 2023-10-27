@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Copy index_range from the previous task """
+"""pagination """
 import csv
 from typing import List, Tuple
-from simple_helper_function import index_range
+from .simple_helper_function import index_range
 
 
 class Server:
