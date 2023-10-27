@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" LFU"""
+""" LFU Cache"""
 from base_caching import BaseCaching
 
 
 class LFUCache(BaseCaching):
-    """ LFU system """
+    """ the LFU cache system """
 
     def __init__(self):
         """ Constructor """
