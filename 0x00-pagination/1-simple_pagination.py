@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
+"""Copy index_range from the previous task """
 import csv
 from typing import List, Tuple
-"""Copy index_range from the previous task """
+from simple_helper_function import index_range
 
 
 class Server:
@@ -24,11 +25,11 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        """find the correct indexes to paginate the dataset correctly """
+        """Return the appropriate page """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
 
-        start_index. end_index = index_range(page, page_size)
+        start_index, end_index = index_range(page, page_size)
 
         dataset = self.dataset()
         return dataset[start_index:end_index]
