@@ -4,7 +4,7 @@
 from base_caching import BaseCaching
 
 
-class BaseCache(BaseCaching):
+class BasicCache(BaseCaching):
     """a class BasicCache that inherits from BaseCaching"""
 
     def put(self, key, item):
