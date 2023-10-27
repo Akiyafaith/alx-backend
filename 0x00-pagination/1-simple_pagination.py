@@ -4,6 +4,11 @@ import csv
 from typing import List, Tuple
 
 
+def index_range(page, page_size):
+        """The start and end index for a specified page and page size."""
+        start_index = (page - 1) * page_size
+        end_index = page * page_size
+        return (start_index, end_index)
 class Server:
     """Server class to paginate a database of popular baby names.
     """
@@ -33,8 +38,3 @@ class Server:
         dataset = self.dataset()
         return dataset[start_index:end_index]
 
-    def index_range(page, page_size):
-        """The start and end index for a specified page and page size."""
-        start_index = (page - 1) * page_size
-        end_index = page * page_size
-        return (start_index, end_index)
