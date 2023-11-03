@@ -11,6 +11,7 @@ class Config:
     """config class"""
     LANGUAGES = ["en", "fr"]
 
+
 app.config.from_object(Config)
 
 
