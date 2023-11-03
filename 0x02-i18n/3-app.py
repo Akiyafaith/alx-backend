@@ -26,9 +26,8 @@ def get_locale():
 
 @app.route("/", methods=["GET"], strict_slashes=False)
 def index():
-    """ GET /
-    Return:
-      - 3-index.html
+    """ 
+    Render the template
     """
     g.locale = get_locale()
     home_title = gettext("home_title")
